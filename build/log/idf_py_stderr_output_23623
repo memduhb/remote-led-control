@@ -1,0 +1,135 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbserial-10 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m0x40375a9a: panic_abort at /Users/memduh/esp/esp-idf/components/esp_system/panic.c:463
+0x4037ad81: esp_system_abort at /Users/memduh/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40381ee9: __assert_func at /Users/memduh/esp/esp-idf/components/newlib/assert.c:80
+0x4037c2c9: xEventGroupSetBits at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:560 (discriminator 1)
+0x42009156: increase_brightness at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:45
+0x4200920f: app_main at /Users/memduh/esp/esp-idf/examples/get-started/blink/main/blink_example_main.c:231 (discriminator 1)
+0x4201b36b: main_task at /Users/memduh/esp/esp-idf/components/freertos/app_startup.c:208
+0x4037b829: vPortTaskWrapper at /Users/memduh/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x403759d4: esp_restart_noos at /Users/memduh/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m
