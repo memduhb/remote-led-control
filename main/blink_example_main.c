@@ -29,11 +29,15 @@
 #define GREEN_ACTIVE  (1 << 7)
 #define BLUE_ACTIVE   (1 << 8)
 
-
+//COLOR TOGGLE BIT
+#define TOGGLE_COLOR_BIT          (1 << 9)  // Bit to trigger color toggling
+#define COLOR_MODE_RED            (1 << 10)
+#define COLOR_MODE_GREEN          (1 << 11)
+#define COLOR_MODE_BLUE           (1 << 12)
 
 //DECLARING VARIABLES TO HOLD THE CREATED EVENT GROUP
 static EventGroupHandle_t led_state_group;
-
+static uint32_t current_color_mode = COLOR_MODE_RED; 
 
 static void led_on(void)
 {
@@ -53,6 +57,12 @@ static void decrease_brightness(void)
 {
     /* Set all LED off to clear all pixels */
     xEventGroupSetBits(led_state_group, DECREASE_BRIGHTNESS_BIT);
+}
+
+static void toggle_color(void)
+{
+    /* Set all LED off to clear all pixels */
+    xEventGroupSetBits(led_state_group, TOGGLE_COLOR_BIT);
 }
 
 
@@ -90,30 +100,12 @@ static void configure_led(void) {
 }
 
 
-void toggle_color_mode(void) {
-    static uint32_t current_mode = RED_ACTIVE;
-    xEventGroupClearBits(led_state_group, RED_ACTIVE | GREEN_ACTIVE | BLUE_ACTIVE);
-
-    switch (current_mode) {
-        case RED_ACTIVE:
-            current_mode = GREEN_ACTIVE;
-            xEventGroupSetBits(led_state_group, GREEN_ACTIVE);
-            break;
-        case GREEN_ACTIVE:
-            current_mode = BLUE_ACTIVE;
-            xEventGroupSetBits(led_state_group, BLUE_ACTIVE);
-            break;
-        case BLUE_ACTIVE:
-            current_mode = RED_ACTIVE;
-            xEventGroupSetBits(led_state_group, RED_ACTIVE);
-            break;
-    }
-}
 
 //LED CONTROL TASK
 void led_control_task(void *pvParameters) {
-    uint8_t red = 0, green = 0, blue = 255; // Initial color and brightness levels
+    uint8_t red = 0, green = 0, blue = 150; // Initial color and brightness levels
     uint32_t active_color = BLUE_ACTIVE; // Start with blue active
+    
 
     while (1) {
         EventBits_t bits = xEventGroupWaitBits(
@@ -169,7 +161,7 @@ void led_control_task(void *pvParameters) {
                         break;
                     case BLUE_ACTIVE:
                         blue = (blue < BRIGHTNESS_STEP) ? 0 : blue - BRIGHTNESS_STEP;
-                        break;
+                        break;}
             // Apply changes only if LED is on
             if (bits & LED_ON_BIT) {
                 led_strip_set_pixel(led_strip, 0, red, green, blue);
@@ -177,10 +169,26 @@ void led_control_task(void *pvParameters) {
             }
             printf("Brightness decreased\n");
         }
-    }
-}
-}
+            // Toggle color logic
+        if (bits & TOGGLE_COLOR_BIT) {
+            if (current_color_mode == COLOR_MODE_RED) {
+                red = 0; green = 255; blue = 0;  // Switch to green
+                current_color_mode = COLOR_MODE_GREEN;
+            } else if (current_color_mode == COLOR_MODE_GREEN) {
+                red = 0; green = 0; blue = 255;  // Switch to blue
+                current_color_mode = COLOR_MODE_BLUE;
+            } else if (current_color_mode == COLOR_MODE_BLUE) {
+                red = 255; green = 0; blue = 0;  // Back to red
+                current_color_mode = COLOR_MODE_RED;
+            }
+            if (bits & LED_ON_BIT) {
+                led_strip_set_pixel(led_strip, 0, red, green, blue);
+                led_strip_refresh(led_strip);
+            }
+        }
 
+}
+}
 
 
 
